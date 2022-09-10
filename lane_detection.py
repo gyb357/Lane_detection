@@ -23,8 +23,6 @@ def roi(image, ver):
 
 def hough_lines(image, minLength, maxGap):
     radian = np.pi/180
-    # line   = cv2.HoughLinesP(image, 2, radian, 100, np.array([]), minLength, maxGap)
-    # line2  = np.zeros((*image.shape, 3), dtype=np.uint8)
     return cv2.HoughLinesP(image, 2, radian, 100, np.array([]), minLength, maxGap)
 
 
